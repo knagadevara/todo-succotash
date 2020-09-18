@@ -25,7 +25,7 @@ SECRET_KEY = 'k+a*$nstpu5o^i_!eon5g1xifl==9l3=*3s8+w9o4n_gf-0&($'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['M192168056101.k8x77-mgr-prd.PyDevRa.zone' , '192.168.56.101' ]
 
 
 # Application definition
