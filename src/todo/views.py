@@ -5,7 +5,7 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework import viewsets
 from rest_framework.reverse import reverse
-from rest_framework.decorators import list_route
+from rest_framework.decorators import action
 from rest_framework.response import Response
 
 ## Application Classes import
@@ -24,5 +24,5 @@ class ToDoViewSet(viewsets.ModelViewSet):
         instance.save()
 
     def delete(self, request):
-        ToDoItems.objects.all().delete()
+        ToDoItem.objects.all().delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
