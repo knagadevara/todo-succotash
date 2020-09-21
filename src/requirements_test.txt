@@ -1,0 +1,6 @@
+-r requirements.txt
+colorama
+coverage
+nose
+django-nose
+pinocchio
